@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<html ng-app="app" ng-cloak>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{title}}</title>
+  <!--<base href="/">-->
+  <link rel="stylesheet" href="/css/bootstrap.min.css" media="screen">
+  <link rel="stylesheet" href="/css/bootswatch.1.min.css">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+
+  @RenderBody()
+
+  <script src="/js/angular.min.js"></script>
+  <script src="/js/angular-resource.min.js"></script>
+  <script src="/js/angular-route.min.js"></script>
+  <script src="/js/angular-animate.min.js"></script>
+  <script src="/js/angular-cookies.min.js"></script>
+  <script src="/js/ui-bootstrap-tpls-0.13.0.min.js"></script>
+
+  <script src="/app/app.js"></script>
+  <script src="/app/others/app-route.js"></script>
+  <script src="/app/others/app-run.js"></script>
+  <script src="/app/services/todoFactory.js"></script>
+  <script src="/app/controllers/deleteConfirmController.js"></script>
+  <script src="/app/controllers/todoController.js"></script>
+  <script src="/app/controllers/todoNewController.js"></script>
+  <script src="/app/controllers/todoEditController.js"></script>
+  <script src="/app/controllers/todoStatisticsController.js"></script>
+  <script src="/app/directives/sgartClockDirective.js"></script>
+
+  @RenderSection("Scripts", required: false)
+</body>
+</html>
